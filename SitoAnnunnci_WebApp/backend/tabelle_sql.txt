@@ -1,0 +1,13 @@
+//ricordatevi di aggiungere la tabella utenti
+
+CREATE TABLE Annunci (
+    id SERIAL PRIMARY KEY,
+    foto BYTEA,
+    descrizione TEXT,
+    prezzo_vecchio DECIMAL(10, 2),
+    prezzo_nuovo DECIMAL(10, 2),
+    prezzo_cambiato BOOLEAN,
+    metri_quadri DECIMAL(10, 2),
+    posizione_google_maps VARCHAR(255),
+    recensioni TEXT[]
+);
