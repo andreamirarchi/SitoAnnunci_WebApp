@@ -1,3 +1,30 @@
+nav {
+  position: absolute;
+  right: 20px; /* Distanza dal bordo destro */
+  top: 50px; /* Distanza dall'alto */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 10px 0; /* Spazio tra i link */
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: blue;
+}
+
 #annunci-container {
   display: flex;  /* Disposizione in linea */
   overflow-x: auto; /* Abilita lo scroll orizzontale */
