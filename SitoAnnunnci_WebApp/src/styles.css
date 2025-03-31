@@ -1,0 +1,151 @@
+/* Layout principale */
+.main-container {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* Colonna filtri + risultati */
+  gap: 20px;
+  align-items: start;
+}
+
+
+/* Barra di ricerca */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Pannello filtri */
+.filters-panel {
+  width: 100%;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenitore dei risultati */
+.results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Griglia degli annunci */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adatta gli annunci alla larghezza */
+  gap: 10px;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Layout principale */
+.main-container {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* Colonna filtri + risultati */
+  gap: 20px;
+  align-items: start;
+}
+
+/* Stile card */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Barra di ricerca */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+/* Pannello filtri */
+.filters-panel {
+  width: 100%;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card dell'annuncio */
+.result-card {
+  background: #ffffff;
+  border-radius: 15px; /* Bordo arrotondato */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Stile immagine */
+.result-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Migliora il layout del testo */
+.info {
+  margin-top: 15px;
+}
+
+/* Prezzo */
+.price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin: 10px 0;
+}
+
+/* Pulsante "Vedi Dettagli" */
+.details-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr; /* Una sola colonna */
+  }
+
+  .filters-panel {
+    order: -1; /* I filtri vanno sopra i risultati */
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
