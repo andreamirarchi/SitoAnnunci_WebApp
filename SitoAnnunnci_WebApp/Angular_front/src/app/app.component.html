@@ -1,6 +1,10 @@
-<h1>{{ title }}</h1>
-<nav>
-  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home annunci</a>
-  <a routerLink="/A/1" routerLinkActive="active">Aggiung annuncio</a>
-</nav>
-<router-outlet></router-outlet>
+<div class="container">
+  <h1>{{ title }}</h1>
+  <nav class="navbar">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home annunci</a>
+    <a routerLink="/A/1" routerLinkActive="active">Aggiungi annuncio</a>
+  </nav>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

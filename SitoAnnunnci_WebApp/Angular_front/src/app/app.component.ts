@@ -31,7 +31,7 @@ export class Annuncio {
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
-  title = 'La mia app Angular!';
+  title = "I miei annunci";
   annunci: Annuncio[] = [];
 
   constructor(private http: HttpClient) {}

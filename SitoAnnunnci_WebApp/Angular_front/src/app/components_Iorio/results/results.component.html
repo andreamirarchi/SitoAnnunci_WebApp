@@ -1,0 +1,24 @@
+<div class="results-container">
+  <h3>Risultati:</h3>
+
+  <div class="sorting-buttons">
+    <button class="btn btn-light" (click)="ordinaPer('price', 'asc')">Prezzo crescente</button>
+    <button class="btn btn-light" (click)="ordinaPer('price', 'desc')">Prezzo decrescente</button>
+    <button class="btn btn-light" (click)="ordinaPer('superficie', 'asc')">Superficie crescente</button>
+    <button class="btn btn-light" (click)="ordinaPer('superficie', 'desc')">Superficie decrescente</button>
+  </div>
+
+  <div *ngIf="results.length === 0">
+    <p>Nessun annuncio trovato.</p>
+  </div>
+
+  <div class="grid-container">
+    <div *ngFor="let result of results" class="result-card">
+      <h3>{{ result.title }}</h3>
+      <p>Prezzo: {{ result.price }} €</p>
+      <p>Tipologia: {{ result.tipologia }}</p>
+      <button class="btn btn-primary details-button">Vedi Dettagli</button>
+    </div>
+  </div>
+
+</div>
